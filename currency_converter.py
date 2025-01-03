@@ -29,9 +29,14 @@ def convert(amount, source_currency, target_currency):
         return amount
     return amount * exchange_rates[source_currency][target_currency]
 
-amount = get_amount()
-source_currency = get_currency('Source')
-target_currency = get_currency('Target')
 
-converted_amount = convert(amount, source_currency, target_currency)
-print(f"{amount} {source_currency} is equal to {converted_amount:.2f}")
+def main():
+    amount = get_amount()
+    source_currency = get_currency('Source')
+    target_currency = get_currency('Target')
+
+    converted_amount = convert(amount, source_currency, target_currency)
+    print(f"{amount} {source_currency} is equal to {converted_amount:.2f}")
+
+if __name__ == '__main__':
+    main()

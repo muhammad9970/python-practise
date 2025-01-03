@@ -33,5 +33,5 @@ amount = get_amount()
 source_currency = get_currency('Source')
 target_currency = get_currency('Target')
 
-converted_currency = convert(amount, source_currency, target_currency)
-print(f"{amount} {source_currency} is equal to {converted_currency:.2f}")
+converted_amount = convert(amount, source_currency, target_currency)
+print(f"{amount} {source_currency} is equal to {converted_amount:.2f}")
